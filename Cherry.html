@@ -1,0 +1,252 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cherry Farms - Farm-Fresh Proteins in Lagos</title>
+  <style>
+    /* CSS Styles */
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #fdfdfb;
+      color: #333;
+    }
+
+    header.hero {
+      background: url('hero.jpg') center/cover no-repeat;
+      height: 90vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      position: relative;
+    }
+
+    header .overlay {
+      background-color: rgba(0, 0, 0, 0.6);
+      color: white;
+      padding: 2rem;
+      border-radius: 12px;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 0.75rem 1.5rem;
+      margin: 0.5rem;
+      border: none;
+      border-radius: 5px;
+      background-color: #4CAF50;
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .btn.secondary {
+      background-color: #ffa500;
+    }
+
+    nav ul {
+      display: flex;
+      justify-content: center;
+      list-style: none;
+      background-color: #e9f5e9;
+      padding: 1rem;
+      margin: 0;
+    }
+
+    nav ul li {
+      margin: 0 1rem;
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      color: #2d572c;
+      font-weight: bold;
+    }
+
+    .section {
+      padding: 3rem 2rem;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    .product-category {
+      margin-bottom: 2rem;
+    }
+
+    .product-category ul {
+      list-style: disc;
+      margin-left: 1.5rem;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+    }
+
+    input, textarea {
+      padding: 0.75rem;
+      font-size: 1rem;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+
+    button {
+      background-color: #4CAF50;
+      color: white;
+      padding: 0.75rem;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    footer {
+      background-color: #2d572c;
+      color: white;
+      text-align: center;
+      padding: 1rem;
+    }
+
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 1rem;
+    }
+
+    .gallery img {
+      width: 100%;
+      border-radius: 8px;
+    }
+
+    @media (max-width: 768px) {
+      nav ul {
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header class="hero">
+    <div class="overlay">
+      <h1>Farm-Fresh Proteins, Delivered to Your Door in Lagos</h1>
+      <p>Your trusted source for poultry, snails, and fish.</p>
+      <a href="#products" class="btn">Explore Products</a>
+      <a href="https://wa.me/234XXXXXXXXXX" class="btn secondary">Order via WhatsApp</a>
+    </div>
+  </header>
+
+  <nav>
+    <ul>
+      <li><a href="#about">About Us</a></li>
+      <li><a href="#products">Products</a></li>
+      <li><a href="#how-to-order">How to Order</a></li>
+      <li><a href="#contact">Contact</a></li>
+      <li><a href="#faq">FAQ</a></li>
+      <li><a href="#gallery">Gallery</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <section id="about" class="section">
+      <h2>About Cherry Farms</h2>
+      <p>At Cherry Farms, we are passionate about providing Lagosians with the freshest, most nutritious poultry, fish, and snails. Our journey began with a commitment to humane farming, sustainability, and quality.</p>
+    </section>
+
+    <section id="products" class="section">
+      <h2>Our Products</h2>
+      <div class="product-category">
+        <h3>Poultry</h3>
+        <ul>
+          <li>Live Broiler</li>
+          <li>Dressed Chicken</li>
+          <li>Eggs</li>
+        </ul>
+      </div>
+      <div class="product-category">
+        <h3>Snails</h3>
+        <ul>
+          <li>Live Achatina Snails</li>
+          <li>Processed Snail Meat</li>
+        </ul>
+      </div>
+      <div class="product-category">
+        <h3>Fish</h3>
+        <ul>
+          <li>Catfish</li>
+          <li>Tilapia</li>
+          <li>Croaker</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="how-to-order" class="section">
+      <h2>How to Order</h2>
+      <ol>
+        <li>Browse Products</li>
+        <li>Message us on <a href="https://wa.me/234XXXXXXXXXX">WhatsApp</a></li>
+        <li>Confirm Order & Delivery</li>
+        <li>Make Payment</li>
+      </ol>
+      <p>We deliver across Lagos. Payments via Bank Transfer, Mobile Money, or POS on Delivery.</p>
+    </section>
+
+    <section id="contact" class="section">
+      <h2>Contact Us</h2>
+      <p>Phone: 080XXXXXXXX | WhatsApp: 080XXXXXXXX</p>
+      <p>Email: info@cherryfarms.ng</p>
+      <p>Address: Plot 7, Cherry Farms Road, Lagos</p>
+      <form id="contactForm">
+        <input type="text" id="name" placeholder="Your Name" required />
+        <input type="email" id="email" placeholder="Your Email" required />
+        <textarea id="message" placeholder="Your Message"></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+    </section>
+
+    <section id="faq" class="section">
+      <h2>Frequently Asked Questions</h2>
+      <details>
+        <summary>How fresh are your products?</summary>
+        <p>All our products are harvested and delivered within 24 hours.</p>
+      </details>
+      <details>
+        <summary>Do you deliver outside Lagos?</summary>
+        <p>Currently, we only deliver within Lagos State.</p>
+      </details>
+    </section>
+
+    <section id="gallery" class="section">
+      <h2>Farm Gallery</h2>
+      <div class="gallery">
+        <img src="farm1.jpg" alt="Farm view" />
+        <img src="team.jpg" alt="Team at work" />
+        <img src="products.jpg" alt="Fresh products" />
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Cherry Farms. All rights reserved.</p>
+  </footer>
+
+  <script>
+    // JavaScript - Simple contact form validation
+    document.getElementById("contactForm").addEventListener("submit", function (e) {
+      e.preventDefault();
+      const name = document.getElementById("name").value.trim();
+      const email = document.getElementById("email").value.trim();
+      const message = document.getElementById("message").value.trim();
+
+      if (!name || !email || !message) {
+        alert("Please fill out all fields before submitting.");
+      } else {
+        alert("Thank you for your message! We'll get back to you soon.");
+        this.reset();
+      }
+    });
+  </script>
+</body>
+</html>
